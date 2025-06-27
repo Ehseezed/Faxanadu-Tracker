@@ -1,0 +1,20 @@
+﻿// this the manifest for you pack
+// it contains basic information about your pack
+// for more info on the manifest check: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#manifest
+{
+    "name": "Faxanadu Tracker",
+    "game_name": "Faxanadu",
+    "package_version": "1.0.0",
+    "package_uid": "faxanadu_tracker",
+    "platform": "PC",
+    "author": "Ehseezed",
+    "variants": {
+        "standard": {
+            "display_name": "Map Tracker",
+            "flags": [
+                "ap" //enables AP autotracking interface - remove if not needed
+            ]
+        }
+    },
+    "versions_url": "https://raw.githubusercontent.com/Ehseezed/AM2R-Tracker/main/version.json"
+}

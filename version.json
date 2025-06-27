@@ -1,0 +1,15 @@
+{//please just work
+    "versions": [
+        {
+            "version": "1.0.0",
+            "package_uid": "faxanadu_tracker",
+            "package_version": "1.0.0",
+            "sha256": "d2c8f3b4e5f6a7b8c9d0e1f2a3b4c5d6e7f8g9h0i1j2k3l4m5n6o7p8q9r0s1t2"
+        }
+    ],
+    "version": ""
+}
+
+// powershell Get-FileHash -Algorithm SHA256 .\AM2R.zip | Format-List to get latest sha256 on windows
+// sha256sum path/to/pack.zip to get latest sha256 on linux
+

@@ -1,0 +1,207 @@
+[
+    {
+        "name": "Progressive Sword",
+        "type": "progressive",
+        "loop": "false",
+        "stages": [
+            {
+                "name": "Hand Dagger",
+                "img": "images/items/hand_dagger.png",
+                "codes": "sword"
+            },
+            {
+                "name": "Long Sword",
+                "img": "images/items/long_sword.png",
+                "codes": "sword2"
+            },
+            {
+                "name": "Giant Blade",
+                "img": "images/items/giant_blade.png",
+                "codes": "sword3"
+            },
+            {
+                "name": "Dragon Slayer",
+                "img": "images/items/dragon_slayer.png",
+                "codes": "sword4"
+            }
+        ]
+    },
+    {
+        "name": "Progressive Armor",
+        "type": "progressive",
+        "loop": "false",
+        "stages": [
+            {
+                "name": "Studded Mail",
+                "disabled_img": "images/items/leather_mail.png",
+                "img": "images/items/studded_mail.png",
+                "codes": "armor"
+            },
+            {
+                "name": "Full Plate",
+                "img": "images/items/full_plate.png",
+                "codes": "armor2"
+            },
+            {
+                "name": "Battle Suit",
+                "img": "images/items/battle_suit.png",
+                "codes": "armor3"
+            }
+        ]
+    },
+    {
+        "name": "Progressive Shield",
+        "type": "progressive",
+        "loop": "false",
+        "stages": [
+            {
+                "name": "Small Shield",
+                "img": "images/items/shield_small.png",
+                "codes": "shield"
+            },
+            {
+                "name": "Large Shield",
+                "img": "images/items/shield_large.png",
+                "codes": "shield2"
+            },
+            {
+                "name": "Magic Shield",
+                "img": "images/items/shield_magic.png",
+                "codes": "shield3"
+            },
+            {
+                "name": "Battle Helmet",
+                "img": "images/items/battle_helmet.png",
+                "codes": "shield4"
+            }
+        ]
+    },
+    {
+        "name": "Spring Elixir",
+        "type": "toggle",
+        "img": "images/items/elixer.png",
+        "codes": "springelixir"
+    },
+    {
+        "name": "Mattock",
+        "type": "toggle",
+        "img": "images/items/mattock.png",
+        "codes": "mattock"
+    },
+    {
+        "name": "Unlock Wingboots",
+        "type": "toggle",
+        "img": "images/items/wing_boots.png",
+        "codes": "wingboots"
+    },
+    {
+        "name": "Key Jack",
+        "type": "toggle",
+        "img": "images/items/key_jack.png",
+        "codes": "keyjack"
+    },
+    {
+        "name": "Key Queen",
+        "type": "toggle",
+        "img": "images/items/key_queen.png",
+        "codes": "keyqueen"
+    },
+    {
+        "name": "Key King",
+        "type": "toggle",
+        "img": "images/items/key_king.png",
+        "codes": "keyking"
+    },
+    {
+        "name": "Key Joker",
+        "type": "toggle",
+        "img": "images/items/key_joker.png",
+        "codes": "keyjoker"
+    },
+    {
+        "name": "Key Ace",
+        "type": "toggle",
+        "img": "images/items/key_ace.png",
+        "codes": "keyace"
+    },
+    {
+        "name": "Ring of Ruby",
+        "type": "toggle",
+        "img": "images/items/ring_ruby.png",
+        "codes": "ringruby"
+    },
+    {
+        "name": "Ring of Dworf",
+        "type": "toggle",
+        "img": "images/items/ring_dwarf.png",
+        "codes": "ringdworf"
+    },
+    {
+        "name": "Demons Ring",
+        "type": "toggle",
+        "img": "images/items/ring_demon.png",
+        "codes": "demonsring"
+    },
+    {
+        "name": "Black Onyx",
+        "type": "toggle",
+        "img": "images/items/black_onyx.png",
+        "codes": "blackonyx"
+    },
+    {
+        "name": "Deluge",
+        "type": "toggle",
+        "img": "images/items/magic_deluge.png",
+        "codes": "deluge"
+    },
+    {
+        "name": "Thunder",
+        "type": "toggle",
+        "img": "images/items/magic_thunder.png",
+        "codes": "thunder"
+    },
+    {
+        "name": "Fire",
+        "type": "toggle",
+        "img": "images/items/magic_fire.png",
+        "codes": "fire"
+    },
+    {
+        "name": "Death",
+        "type": "toggle",
+        "img": "images/items/magic_death.png",
+        "codes": "death"
+    },
+    {
+        "name": "Tilte",
+        "type": "toggle",
+        "img": "images/items/magic_tilte.png",
+        "codes": "tilte"
+    },
+    {
+        "name": "Ring of Elf",
+        "type": "toggle",
+        "img": "images/items/ring_elf.png",
+        "codes": "ringelf"
+    },
+    {
+        "name": "Magical Rod",
+        "type": "toggle",
+        "img": "images/items/magical_rod.png",
+        "codes": "magicalrod"
+    },
+    {
+        "name": "Pendant",
+        "type": "toggle",
+        "img": "images/items/pendant.png",
+        "codes": "pendant"
+    },
+    {
+        "name": "Red Potion",
+        "type": "consumable",
+        "img": "images/items/elixer.png",
+        "codes": "redpotion",
+        "max_quantity": 18,
+        "quantity": 0
+    }
+]

@@ -1,0 +1,1627 @@
+[
+    // Events and logic helpers
+    {
+        "name": "can_buy",
+        "access_rules": ["sword", "deluge", "ringelf"]
+    },
+    {
+        "name": "has_magic",
+        "access_rules": ["deluge", "thunder", "fire", "death", "tilte"]
+    },
+    {
+        "name": "Sky Spring Flow",
+        "access_rules": ["@Trunk, wingboots"]
+    },
+    {
+        "name": "Tower Spring Flow",
+        "access_rules": ["@Tower of Fortress, springelixir"]
+    },
+    {
+        "name": "Joker Spring Flow",
+        "access_rules": ["@Joker Spring"]
+    },
+    // Actual locations
+    {
+        "name": "Eolis",
+        "children": [
+            {
+                "name": "Eolis Guru",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 716,
+                        "y": 2489
+                    }
+                ]
+            },
+            {
+                "name": "Eolis Key Shop",
+                "access_rules": ["@can_buy"],
+                "sections": [
+                    {
+                        "name": "Key Jack",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 652,
+                        "y": 2489
+                    }
+                ]
+            },
+            {
+                "name": "Eolis Shop",
+                "access_rules": ["@can_buy"],
+                "sections": [
+                    {
+                        "item_count": 1,
+                        "name": "Red Potion"
+                    },
+                    {
+                        "item_count": 1,
+                        "name": "Elixir"
+                    },
+                    {
+                        "item_count": 1,
+                        "name": "Hand Dagger"
+                    },
+                    {
+                        "item_count": 1,
+                        "name": "Deluge"
+                    }
+
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 627,
+                        "y": 2489
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Path to Apolune",
+        "access_rules": ["@Eolis, keyjack, sword"],
+        "children": [
+            {
+                "name": "",
+                "sections": [
+                    {
+                        "name": "Magic Shield",
+                        "item_count": 1,
+                        "access_rules": ["keyking"]
+                    },
+                    {
+                        "name": "Death",
+                        "item_count": 1,
+                        "access_rules": ["keyace"]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1779,
+                        "y": 2360
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Apolune",
+        "access_rules": ["@Path to Apolune"],
+        "children": [
+            {
+                "name": "Apolune Shop",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "name": "Deluge",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Small Shield",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Hand Dagger",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Red Potion",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1980,
+                        "y": 2390
+                    }
+                ]
+            },
+            {
+                "name": "Aploune Key Shop",
+                "sections": [
+                    {
+                        "name": "Key Jack",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2011,
+                        "y": 2390
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Tower of Trunk",
+        "access_rules": ["@Apolune, keyjack"],
+        "children": [
+            {
+                "name": "Tower of Trunk Hidden Mattock",
+                "access_rules": ["deluge", "sword2", "[sword]"],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2579,
+                        "y": 2597
+                    }
+                ]
+            },
+            {
+                "name": "Tower of Trunk Hidden Hourglass",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2964,
+                        "y": 2381
+                    }
+                ]
+            },
+            {
+                "name": "Tower of Trunk Boss Mattock",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3228,
+                        "y": 2429
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Path to Forepaw",
+        "access_rules": ["@Apolune, mattock"],
+        "children": [
+            {
+                "name": "Path to Forepaw Glove",
+                "access_rules": ["wingboots, deluge"],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2804,
+                        "y": 2156
+                    }
+                ]
+            },
+            {
+                "name": "Path to Forepaw Hidden Red Potion",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2803,
+                        "y": 2383
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Forepaw",
+        "access_rules": ["@Path to Forepaw"],
+        "children": [
+            {
+                "name": "Forepaw Key Shop",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "name": "Key Jack",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Key Queen",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3420,
+                        "y": 2184
+                    }
+                ]
+            },
+            {
+                "name": "Forepaw Shop",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "name": "Long Sword",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Red Potion",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Small Shield",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Studded Mail",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Wingboots",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3282,
+                        "y": 2178
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Trunk",
+        "access_rules": ["@Forepaw"],
+        "children": [
+            {
+                "name": "Trunk Hidden Ointment",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3443,
+                        "y": 2159
+                    }
+                ]
+            },
+            {
+                "name": "Trunk Hidden Red Potion",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3931,
+                        "y": 2284
+                    }
+                ]
+            },
+            {
+                "name": "Trunk Red Potion",
+                "access_rules": ["wingboots"],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3931,
+                        "y": 2171
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Joker Spring",
+        "access_rules": ["@Trunk, keyjoker"],
+        "children": [
+            {
+                "name": "Joker Spring Ruby Ring",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3728,
+                        "y": 2423
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Tower of Fortress",
+        "access_rules": ["@Trunk, keyjack"],
+        "children": [
+            {
+                "name": "Tower of Fortress Boss Wingboots",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3653,
+                        "y": 1612
+                    }
+                ]
+            },
+            {
+                "name": "Tower of Fortress Elixir",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3692,
+                        "y": 1612
+                    }
+                ]
+            },
+            {
+                "name": "Tower of Fortress Guru",
+                "access_rules": ["@Tower Spring Flow"],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3242,
+                        "y": 1851
+                    }
+                ]
+            },
+            {
+                "name": "Tower of Fortress Hidden Wingboots",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3172,
+                        "y": 1830
+                    }
+                ]
+            },
+            {
+                "name": "Tower of Fortress Ointment",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3699,
+                        "y": 1717
+                    }
+                ]
+            },
+            {
+                "name": "Tower of Fortress Poison 1",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3173,
+                        "y": 1924
+                    }
+                ]
+            },
+            {
+                "name": "Tower of Fortress Poison 2",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3436,
+                        "y": 1774
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Path to Mascon",
+        "access_rules": ["@Trunk, keyqueen, ringruby, @Tower Spring Flow, @Joker Spring Flow, @Sky Spring Flow, sword2"],
+        "children": [
+            {
+                "name": "Path to Mascon Hidden Wingboots",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 947,
+                        "y": 1932
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Path to Victim",
+        "access_rules": ["@Mascon"],
+        "children": [
+            {
+                "name": "Misty Shop",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "name": "Death",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Elixir",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Hourglass",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Red Potion",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1699,
+                        "y": 1825
+                    }
+                ]
+            },
+            {
+                "name": "Misty Doctor Office",
+                "access_rules": ["@has_magic"],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2206,
+                        "y": 1742
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Tower of Red Potion",
+        "access_rules": [
+            "@Path to Mascon, keyqueen, redpotion:4",
+            "@Path to Mascon, keyqueen, [redpotion:2]"
+        ],
+        "children": [
+            {
+                "name": "Tower of Red Potion",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 317,
+                        "y": 1707
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Mascon",
+        "access_rules": ["@Path to Mascon"],
+        "children": [
+            {
+                "name": "Mascon Shop",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "name": "Large Shield",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Mattock",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Red Potion",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Thunder",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1202,
+                        "y": 1845
+                    }
+                ]
+            },
+            {
+                "name": "Mascon Key Shop",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1,
+                        "name": "Key Jack"
+                    },
+                    {
+                        "item_count": 1,
+                        "name": "Key Queen"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1228,
+                        "y": 1840
+                    }
+                ]
+            }
+        ]
+
+    },
+    {
+        "name": "Tower of Suffer",
+        "access_rules": ["@Path to Victim, keyqueen"],
+        "children": [
+            {
+                "name": "Tower of Suffer Hidden Hourglass",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2276,
+                        "y": 1618
+                    }
+                ]
+            },
+            {
+                "name": "Tower of Suffer Hidden Wingboots",
+                "access_rules": ["Deluge", "sword2"],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2579,
+                        "y": 1627
+                    }
+                ]
+            },
+            {
+                "name": "Tower of Suffer Pendant",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2884,
+                        "y": 1666
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Victim",
+        "access_rules": ["@Path to Victim, wingboots"],
+        "children": [
+            {
+                "name": "Victim Shop",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "name": "Full Plate",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Mattock",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Red Potion",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2426,
+                        "y": 1431
+                    }
+                ]
+            },
+            {
+                "name": "Victim Key Shop",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "name": "Key Queen",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Key King",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2404,
+                        "y": 1418
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Mist",
+        "access_rules": ["@Victim"],
+        "children": [
+            {
+                "name": "Mist Hidden Poison 1",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2762,
+                        "y": 1647
+                    }
+                ]
+            },
+            {
+                "name": "Mist Hidden Poison 2",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2693,
+                        "y": 1316
+                    }
+                ]
+            },
+            {
+                "name": "Mist Hidden Wingboots",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2284,
+                        "y": 1292
+                    }
+                ]
+            },
+            {
+                "name": "Misty House",
+                "access_rules": ["blackonyx"],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2787,
+                        "y": 1319
+                    }
+                ]
+            },
+            {
+                "name": "Misty Magic Hall",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3235,
+                        "y": 1409
+                    }
+                ]
+            },
+            {
+                "name": "Victim Tavern",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2476,
+                        "y": 1444
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Useless Tower",
+        "access_rules": ["@Mist, keyking, wingboots"],
+        "children": [
+            {
+                "name": "Useless Tower",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3162,
+                        "y": 1275
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Tower of Mist",
+        "access_rules": ["@Mist, keyking"],
+        "children": [
+            {
+                "name": "Tower of Mist Black Onyx",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1749,
+                        "y": 1472
+                    }
+                ]
+            },
+            {
+                "name": "Tower of Mist Elixir",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1469,
+                        "y": 1368
+                    }
+                ]
+            },
+            {
+                "name": "Tower of Mist Hidden Ointment",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1093,
+                        "y": 1426
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Path to Conflate",
+        "access_rules": ["@Mist, keyace"],
+        "children": [
+            {
+                "name": "Path to Conflate Hidden Ointment",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1087,
+                        "y": 1178
+                    }
+                ]
+            },
+            {
+                "name": "Path to Conflate Poison",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 959,
+                        "y": 994
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Helm Branch",
+        "access_rules": ["@Path to Conflate, keyking"],
+        "children": [
+            {
+                "name": "Helm Branch Battle Helmet",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 368,
+                        "y": 1017
+                    }
+                ]
+            },
+            {
+                "name": "Helm Branch Hidden Glove",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 575,
+                        "y": 970
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Branches",
+        "access_rules": ["@Path to Conflate, keyking"],
+        "children": [
+            {
+                "name": "Branches Hidden Hourglass",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1526,
+                        "y": 976
+                    }
+                ]
+            },
+            {
+                "name": "Branches Hidden Mattock",
+                "access_rules": ["wingboots"],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1830,
+                        "y": 962
+                    }
+                ]
+            },
+            {
+                "name": "Branches Hidden Ointment",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1447,
+                        "y": 850
+                    }
+                ]
+            },
+            {
+                "name": "Branches Poison",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1685,
+                        "y": 960
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Conflate",
+        "access_rules": ["@Path to Conflate"],
+        "children": [
+            {
+                "name": "Conflate Shop",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "name": "Giant Blade",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Magic Shield",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Red Potion",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Wingboots",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1439,
+                        "y": 989
+                    }
+                ]
+            },
+            {
+                "name": "Conflate Guru",
+                "access_rules": ["armor3"],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1310,
+                        "y": 979
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Path to Daybreak",
+        "access_rules": ["@Branches"],
+        "children": [
+            {
+                "name": "Path to Daybreak Battle Suit",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2511,
+                        "y": 1008
+                    }
+                ]
+            },
+            {
+                "name": "Path to Daybreak Glove",
+                "access_rules": ["wingboots"],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2295,
+                        "y": 738
+                    }
+                ]
+            },
+            {
+                "name": "Path to Daybreak Hidden Wingboots 1",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2350,
+                        "y": 1002
+                    }
+                ]
+            },
+            {
+                "name": "Path to Daybreak Hidden Wingboots 2",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2294,
+                        "y": 679
+                    }
+                ]
+            },
+            {
+                "name": "Path to Daybreak Magical Rod",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2352,
+                        "y": 906
+                    }
+                ]
+            },
+            {
+                "name": "Path to Daybreak Poison",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2383,
+                        "y": 848
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Daybreak",
+        "access_rules": ["@Path to Daybreak"],
+        "children": [
+            {
+                "name": "Daybreak Shop",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "name": "Giant Blade",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Red Potion",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Tilte",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2582,
+                        "y": 684
+                    }
+                ]
+            },
+            {
+                "name": "Daybreak Key Shop",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "name": "Key King",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Key Queen",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2558,
+                        "y": 684
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Dartmoor Castle",
+        "access_rules": ["@Daybreak, ringdworf"],
+        "children": [
+            {
+                "name": "Dartmoor Castle Hidden Hourglass",
+                "access_rules": ["wingboots"],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 696,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Dartmoor Castle Hidden Red Potion",
+                "access_rules": ["@has_magic"],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 541,
+                        "y": 309
+                    }
+                ]
+            }
+
+        ]
+    },
+    {
+        "name": "Dartmoor",
+        "access_rules": ["@Dartmoor Castle"],
+        "children": [
+            {
+                "name": "Dartmoor Shop",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "name": "Giant Blade",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Red Potion",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 943,
+                        "y": 452
+                    }
+                ]
+            },
+            {
+                "name": "Dartmoor Key Shop",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "name": "Key King",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 912,
+                        "y": 442
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fraternal Castle",
+        "access_rules": ["@Dartmoor Castle"],
+        "children": [
+            {
+                "name": "Fraternal Castle Dragon Slayer",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2522,
+                        "y": 285
+                    }
+                ]
+            },
+            {
+                "name": "Fraternal Castle Guru",
+                "access_rules": ["sword4"],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2218,
+                        "y": 512
+                    }
+                ]
+            },
+            {
+                "name": "Fraternal Castle Hidden Hourglass",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2054,
+                        "y": 263
+                    }
+                ]
+            },
+            {
+                "name": "Fraternal Castle Hidden Ointment",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1506,
+                        "y": 432
+                    }
+                ]
+            },
+            {
+                "name": "Fraternal Castle Poison 1",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1793,
+                        "y": 430
+                    }
+                ]
+            },
+            {
+                "name": "Fraternal Castle Poison 2",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2211,
+                        "y": 316
+                    }
+                ]
+            },
+            {
+                "name": "Fraternal Castle Poison 3",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2339,
+                        "y": 285
+                    }
+                ]
+            },
+            {
+                "name": "Fraternal Castle Shop Hidden Ointment",
+                "access_rules": ["@has_magic"],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 1625,
+                        "y": 517
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Evil Fortress",
+        "access_rules": ["@Dartmoor Castle, demonsring"],
+        "children": [
+            {
+                "name": "Evil Fortress Glove",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2953,
+                        "y": 348
+                    }
+                ]
+            },
+            {
+                "name": "Evil Fortress Hidden Glove",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3203,
+                        "y": 485
+                    }
+                ]
+            },
+            {
+                "name": "Evil Fortress Ointment",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 2868,
+                        "y": 284
+                    }
+                ]
+            },
+            {
+                "name": "Evil Fortress Poison 1",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3473,
+                        "y": 283
+                    }
+                ]
+            },
+            {
+                "name": "Evil Fortress Poison 2",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3348,
+                        "y": 324
+                    }
+                ]
+            },
+            {
+                "name": "Evil Fortress Poison 3",
+                "access_rules": [""],
+                "sections": [
+                    {
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 3370,
+                        "y": 380
+                    }
+                ]
+            }
+        ]
+    }
+]
+
