@@ -2,10 +2,18 @@
     "versions":
     [
         {
+            "package_version": "1.0.1",
+            "download_url": "https://github.com/Ehseezed/Faxanadu-Tracker/releases/download/1.0.1/Faxanadu-Tracker.zip",
+            "sha256": "07fc3ac540b16f905b05961644bc470fac6f1687ccd2ed52b141265331cd80e2",
+            "changelog": [
+                "Fix some lingering issues with the map and item display"
+            ]
+        },
+        {
             "package_version": "1.0.0",
-            download_url: "https://github.com/Ehseezed/Faxanadu-Tracker/releases/download/1.0.0/Faxanadu-Tracker.zip",
+            "download_url": "https://github.com/Ehseezed/Faxanadu-Tracker/releases/download/1.0.0/Faxanadu-Tracker.zip",
             "sha256": "25968fe3749fe1fa48ebd2e4be7f3616a6b5587b724a6487d97d78a6df8221ae",
-            changelog: [
+            "changelog": [
                 "Initial release"
             ]
         }
