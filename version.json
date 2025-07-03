@@ -20,6 +20,3 @@
     ]
 }
 
-// powershell Get-FileHash -Algorithm SHA256 .\AM2R.zip | Format-List to get latest sha256 on windows
-// sha256sum path/to/pack.zip to get latest sha256 on linux
-
