@@ -199,7 +199,7 @@
     {
         "name": "Red Potion",
         "type": "consumable",
-        "img": "images/items/elixer.png",
+        "img": "images/items/red_potion.png",
         "codes": "redpotion",
         "max_quantity": 18,
         "quantity": 0
