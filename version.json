@@ -2,6 +2,14 @@
     "versions":
     [
         {
+            "package_version": "1.0.2",
+            "download_url": "https://github.com/Ehseezed/Faxanadu-Tracker/releases/download/1.0.2/Faxanadu-Tracker.zip",
+            "sha256": "sha256:8e6b505fa45676bf4ad31a5ab5c3e0af71894ad2fb24d3d12d07230a65ec7448",
+            "changelog": [
+                "Fix Path to Aploune checks not being autotracked"
+                ]
+        },
+        {
             "package_version": "1.0.1",
             "download_url": "https://github.com/Ehseezed/Faxanadu-Tracker/releases/download/1.0.1/Faxanadu-Tracker.zip",
             "sha256": "07fc3ac540b16f905b05961644bc470fac6f1687ccd2ed52b141265331cd80e2",
