@@ -94,15 +94,15 @@
         "access_rules": ["@Eolis, keyjack, sword"],
         "children": [
             {
-                "name": "",
+                "access_rules": [""],
                 "sections": [
                     {
-                        "name": "Magic Shield",
+                        "name": "Path to Apolune Magic Shield",
                         "item_count": 1,
                         "access_rules": ["keyking"]
                     },
                     {
-                        "name": "Death",
+                        "name": "Path to Apolune Death",
                         "item_count": 1,
                         "access_rules": ["keyace"]
                     }
